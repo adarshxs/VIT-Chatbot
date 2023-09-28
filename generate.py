@@ -104,7 +104,7 @@ def submit_to_api(chunk, retries=3):
     print("Max retries exceeded. Skipping this chunk.")
     return None
 
-text = extract_text_from_pdf('D\\20000-Leagues-Under-the-Sea.pdf')
+text = extract_text_from_pdf('Academic-Regulations.pdf')
 tokens = tokenize(text)
 
 token_chunks = list(chunks(tokens, 256))
